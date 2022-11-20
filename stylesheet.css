@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.outercontainer{
+    width: 100%;
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectContainer{
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projCard{
+    width: 30%;
+    height: 45%;
+    background-color: black;
+    border: solid rgb(121, 102, 102) 1px;
+    margin: 0px 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projCard:hover  > .projName{
+    top: 0%;
+}
+
+.one{
+    background-image: url(assets/Screenshot\ \(15\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.two{
+    background-image: url(assets/Screenshot\ \(21\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.three{
+    background-image: url(assets/Screenshot\ \(35\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.four{
+    background-image: url(assets/Screenshot\ \(79\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.five{
+    background-image: url(assets/Screenshot\ \(81\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.six{
+    background-image: url(assets/Screenshot\ \(13\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.projName{
+    width: 100%;
+    height: 20%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -50%;
+    transition: 0.5s ease-in-out;
+}
+
+.projName h2, button{
+    margin: 0px 10px;
+}
+
+.projDescription{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    position: absolute;
+    bottom: -100%;
+    transition: 0.5s ease-in-out;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.description{
+    bottom: 0%;
+}
+
+@media only screen and (max-width: 850px){
+
+    .outercontainer {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .projectContainer{
+        width: 95%;
+   
+    }
+
+    .projCard {
+        width: 45%;
+        height: 350px;
+        margin: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .projCard {
+        width: 80%;
+        height: 350px;
+        margin: 10px 5px;
+    }
+}
